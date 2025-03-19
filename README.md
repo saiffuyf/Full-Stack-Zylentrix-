@@ -4,7 +4,7 @@
     # open terminal in vs code
     # type below commands
     git init
-    git clone -b branch https://github.com/saiffuyf/Full-Stack-Zylentrix-.git
+    git clone -b master https://github.com/saiffuyf/Full-Stack-Zylentrix-.git
     cd Full-Stack-Zylentrix-
     npm start                          --->node js server starts
 
