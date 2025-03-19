@@ -12,7 +12,7 @@
     # type below commands in second terminal
     cd Full-Stack-Zylentrix-
     python manage.py runserver
-    click on link (link will shown in terminal).
+    click on link (link will shown in terminal).  ex: http://127.0.0.1:8000/
     now you can interactive with the UI.  note: please make sure that enter correct details to login
 
 
