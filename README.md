@@ -8,7 +8,7 @@
     cd Full-Stack-Zylentrix-
     npm start                          --->node js server starts
 
-# step 2: Open second terminal to django server
+# step 2: Open second terminal to run django server
     # type below commands in second terminal
     cd Full-Stack-Zylentrix-
     python manage.py runserver
