@@ -1,0 +1,213 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+/* Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 600px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: 600;
+    animation: slideDown 0.5s ease-in-out;
+}
+
+.logout-btn {
+    background: transparent;
+    border: none;
+    color: #ff304f;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.logout-btn:hover {
+    color: #c60029;
+}
+
+/* Post Form */
+.post-form {
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    animation: slideUp 0.5s ease-in-out;
+}
+
+.post-form input,
+.post-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+    transition: all 0.3s ease-in-out;
+}
+
+.post-form input:focus,
+.post-form textarea:focus {
+    border-color: #0095f6;
+    box-shadow: 0 0 5px rgba(0, 149, 246, 0.5);
+}
+
+.post-form button {
+    width: 100%;
+    padding: 10px;
+    background: #0095f6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    animation: pulse 1.5s infinite;
+}
+
+.post-form button:hover {
+    background: #007cd6;
+}
+
+/* Posts Section */
+.posts-section {
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Post Cards */
+.post-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: popIn 0.5s ease-in-out;
+}
+
+.post-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* 🔥 FIXED: Instagram-Style Image Box (Full Image Fit) */
+.post-card img {
+    width: 100%;
+    height: auto;  /* Keeps aspect ratio! */
+    max-height: 400px;  /* Prevents too large images */
+    object-fit: contain; /* ✅ Ensures full image fits */
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.post-card img:hover {
+    transform: scale(1.05);
+}
+
+/* Delete Button */
+.delete-btn {
+    display: block;
+    text-align: center;
+    background: transparent;
+    color: #ff304f;
+    padding: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.delete-btn:hover {
+    color: #c60029;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes popIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 5px rgba(0, 149, 246, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(0, 149, 246, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(0, 149, 246, 0.3);
+    }
+}
