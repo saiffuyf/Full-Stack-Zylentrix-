@@ -21,8 +21,4 @@
     authenticated URL's 
     each user can see only his posts [privacy protected]
 
-# now test restapi's in postman
-    below are the end points (open postman)
-
-
     
